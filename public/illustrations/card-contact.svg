@@ -1,0 +1,21 @@
+<svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Letter sheet sticking out -->
+  <g transform="translate(12, 4)">
+    <rect x="0" y="0" width="32" height="34" rx="2" fill="white" stroke="#1D1D1D" stroke-width="1.6"/>
+    <!-- Ruled text lines on letter -->
+    <line x1="6" y1="8" x2="26" y2="8" stroke="#1D1D1D" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="6" y1="14" x2="26" y2="14" stroke="#1D1D1D" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="6" y1="20" x2="22" y2="20" stroke="#1D1D1D" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="6" y1="26" x2="18" y2="26" stroke="#1D1D1D" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Open triangular flap behind letter -->
+  <path d="M4 26 L28 10 L52 26" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Envelope front body -->
+  <path d="M4 26 H52 V52 C52 54.2 50.2 56 48 56 H8 C5.8 56 4 54.2 4 52 Z" fill="white" stroke="#1D1D1D" stroke-width="1.6" stroke-linejoin="round"/>
+  
+  <!-- Envelope folds -->
+  <path d="M4 27 L28 42 L52 27" stroke="#1D1D1D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
