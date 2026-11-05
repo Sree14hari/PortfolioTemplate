@@ -214,7 +214,7 @@
 
       <div class="cards-container">
         <!-- Card 1: My Journey -->
-        <div class="feature-card" id="journey-card">
+        <div class="feature-card arrive-fade-up delay-1" id="journey-card">
           <div class="card-icon-wrapper">
             <img
               src="/illustrations/card-portfolio.svg"
@@ -249,7 +249,7 @@
         </div>
 
         <!-- Card 2: About / Journal -->
-        <div class="feature-card" id="about">
+        <div class="feature-card arrive-fade-up delay-2" id="about">
           <div class="card-icon-wrapper">
             <img
               src="/illustrations/card-journal.svg"
@@ -286,7 +286,7 @@
         </div>
 
         <!-- Card 3: Contact Me -->
-        <div class="feature-card" id="contact">
+        <div class="feature-card arrive-fade-up delay-3" id="contact">
           <div class="card-icon-wrapper">
             <img
               src="/illustrations/card-contact.svg"
@@ -325,7 +325,7 @@
 
     <!-- Selected Works Section -->
     <section class="selected-works-section" id="works">
-      <div class="works-header">
+      <div class="works-header arrive-fade-up">
         <h2 class="works-title">My selected works</h2>
         <p class="works-subtitle">
           With a strong foundation in electronics and embedded engineering, I specialize
@@ -335,7 +335,7 @@
 
       <div class="works-container">
         <!-- Work Card 1: Microplastic Detection -->
-        <article class="work-card">
+        <article class="work-card arrive-fade-up delay-1">
           <div class="work-info">
             <h3 class="work-card-title">
               Portable Fluorescent Imaging–Based Microplastic Detection System for Freshwater Bodies Using ESP32
@@ -364,7 +364,7 @@
         </article>
 
         <!-- Work Card 2: Bharatanatyam Mudra Recognition -->
-        <article class="work-card">
+        <article class="work-card arrive-fade-up delay-2">
           <div class="work-info">
             <h3 class="work-card-title">
               Hybrid Deep Learning Model for Bharatanatyam Mudra Recognition
@@ -397,7 +397,7 @@
 
     <!-- Internships Section -->
     <section class="internships-section" id="internships">
-      <div class="internships-header">
+      <div class="internships-header arrive-fade-up">
         <h2 class="internships-title">Internship Experience</h2>
         <p class="internships-subtitle">
           Hands-on industry training and technical experience in embedded hardware, robotics, and industrial electronics.
@@ -406,7 +406,7 @@
 
       <div class="internships-container">
         <!-- Internship Card 1: SinroRobotics -->
-        <article class="internship-card">
+        <article class="internship-card arrive-fade-up delay-1">
           <div class="internship-badge-row">
             <span class="internship-pill pill-blue">Embedded Systems & Robotics</span>
             <span class="internship-type">Academic Internship</span>
@@ -433,7 +433,7 @@
         </article>
 
         <!-- Internship Card 2: KELTRON -->
-        <article class="internship-card">
+        <article class="internship-card arrive-fade-up delay-2">
           <div class="internship-badge-row">
             <span class="internship-pill pill-yellow">Industrial Electronics</span>
             <span class="internship-type">Govt of Kerala Undertaking</span>
@@ -475,7 +475,7 @@
     <!-- My Journey Section (Left-to-Right Horizontal Scrollable Cards) -->
     <section class="journey-section" id="journey">
       <div class="journey-header">
-        <div class="journey-header-text">
+        <div class="journey-header-text arrive-fade-up">
           <h2 class="journey-title">My Journey</h2>
           <p class="journey-subtitle">
             Key hackathons, internships, technical initiatives, and leadership milestones along my engineering path.
@@ -520,7 +520,7 @@
       <div class="journey-carousel-wrapper">
         <div class="journey-scroll-track" id="journeyTrack">
           <!-- Card 1: Nov 2025 -->
-          <article class="journey-h-card">
+          <article class="journey-h-card arrive-fade-up delay-1">
             <div class="stop-header">
               <span class="stop-date pill-blue">Nov 2025</span>
               <span class="stop-category">Global Hackathon</span>
@@ -532,7 +532,7 @@
           </article>
 
           <!-- Card 2: Dec 2025 -->
-          <article class="journey-h-card">
+          <article class="journey-h-card arrive-fade-up delay-2">
             <div class="stop-header">
               <span class="stop-date pill-yellow">Dec 2025</span>
               <span class="stop-category">Industrial Training</span>
@@ -544,7 +544,7 @@
           </article>
 
           <!-- Card 3: Jan 2026 -->
-          <article class="journey-h-card">
+          <article class="journey-h-card arrive-fade-up delay-3">
             <div class="stop-header">
               <span class="stop-date pill-pink">Jan 2026</span>
               <span class="stop-category">IIT Dhanbad</span>
@@ -556,7 +556,7 @@
           </article>
 
           <!-- Card 4: March 2026 -->
-          <article class="journey-h-card">
+          <article class="journey-h-card arrive-fade-up delay-4">
             <div class="stop-header">
               <span class="stop-date pill-mint">March 2026</span>
               <span class="stop-category">Volunteering</span>
@@ -568,7 +568,7 @@
           </article>
 
           <!-- Card 5: June 2026 -->
-          <article class="journey-h-card card-highlight">
+          <article class="journey-h-card card-highlight arrive-fade-up delay-5">
             <div class="stop-header">
               <span class="stop-date pill-blue">June 2026</span>
               <span class="stop-category">Robotics & Firmware</span>
@@ -629,7 +629,7 @@
 
     <!-- Dark Footer / Contact Section -->
     <footer class="footer-section" id="contact">
-      <div class="footer-container">
+      <div class="footer-container arrive-fade-up">
         <!-- Center Speech Bubble Icon -->
         <div class="speech-bubble-wrapper" aria-hidden="true">
           <svg
@@ -684,7 +684,7 @@
       </div>
 
       <!-- Footer Bottom Bar with SHR Credit -->
-      <div class="footer-bottom">
+      <div class="footer-bottom arrive-fade-up delay-1">
         <div class="footer-bottom-container">
           <p class="footer-credit">
             © 2026 Avanthika T. Designed and developed by{' '}
@@ -760,6 +760,30 @@
             navToggle.setAttribute('aria-expanded', 'false');
           }
         });
+      }
+
+      // Smooth Arriving Animations on Scroll
+      const arriveElements = document.querySelectorAll('.arrive-fade-up');
+      if ('IntersectionObserver' in window) {
+        const arriveObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('has-arrived');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            root: null,
+            rootMargin: '0px 0px -40px 0px',
+            threshold: 0.1,
+          }
+        );
+
+        arriveElements.forEach((el) => arriveObserver.observe(el));
+      } else {
+        arriveElements.forEach((el) => el.classList.add('has-arrived'));
       }
     </script>
 
@@ -849,6 +873,7 @@
         height: 64px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
         pointer-events: auto;
+        animation: navPillArrive 0.8s cubic-bezier(0.16, 1, 0.3, 1) backwards;
       }
 
       .brand-name {
@@ -942,6 +967,7 @@
         color: var(--text-dark);
         letter-spacing: -0.03em;
         margin-bottom: 24px;
+        animation: heroTextArrive 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.1s backwards;
       }
 
       .heading-row {
@@ -966,6 +992,7 @@
         background: #fbcfe8;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         flex-shrink: 0;
+        animation: avatarSpring 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.22s backwards;
       }
 
       .avatar-image {
@@ -990,6 +1017,7 @@
         max-width: 640px;
         margin: 28px auto 0;
         font-weight: 400;
+        animation: heroTextArrive 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.25s backwards;
       }
 
       .hero-description strong {
@@ -1002,6 +1030,7 @@
         position: absolute;
         z-index: 20;
         pointer-events: none;
+        animation: stickerSpring 0.95s cubic-bezier(0.34, 1.56, 0.64, 1) 0.32s backwards;
       }
 
       .pill-badge {
@@ -2376,6 +2405,101 @@
           font-size: 13px;
           gap: 10px;
           justify-content: center;
+        }
+      }
+
+      /* ---------------- Arriving Entrance & Scroll Reveal Animations ---------------- */
+      @keyframes navPillArrive {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes heroTextArrive {
+        from {
+          opacity: 0;
+          transform: translateY(22px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes avatarSpring {
+        from {
+          opacity: 0;
+          transform: scale(0.6) rotate(-8deg);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      @keyframes stickerSpring {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Scroll-Driven Reveal Elements */
+      .arrive-fade-up {
+        opacity: 0;
+        transform: translateY(26px);
+        transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+
+      .arrive-fade-up.has-arrived {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .delay-1 {
+        transition-delay: 0.08s;
+      }
+
+      .delay-2 {
+        transition-delay: 0.16s;
+      }
+
+      .delay-3 {
+        transition-delay: 0.24s;
+      }
+
+      .delay-4 {
+        transition-delay: 0.32s;
+      }
+
+      .delay-5 {
+        transition-delay: 0.40s;
+      }
+
+      /* Accessibility: Reduced Motion */
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+        .arrive-fade-up {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
         }
       }
     </style>
